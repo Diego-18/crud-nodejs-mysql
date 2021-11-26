@@ -1,6 +1,6 @@
 # CRUD NODEJS
 
-This repository is a basic crud of nodeJS and MySQL.
+This repository is a basic nodeJS and MySQL crud making use of the ejs template manager.
 
 ## <img src="https://image.flaticon.com/icons/png/512/969/969955.png" alt="support" width="40" height="40">  Install
 
