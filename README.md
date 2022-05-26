@@ -2,7 +2,7 @@
 
 This repository is a basic nodeJS and MySQL crud making use of the ejs template manager.
 
-## <img src="https://image.flaticon.com/icons/png/512/969/969955.png" alt="support" width="40" height="40">  Install
+## Install
 
 1. You need to create the database which is located in the data folder.
 
@@ -20,12 +20,15 @@ This repository is a basic nodeJS and MySQL crud making use of the ejs template 
 
 7. Access using the following url: <a href="http://localhost:3000" target="__blank">http://localhost:3000</a>
 
-## <img src="https://image.flaticon.com/icons/png/512/390/390112.png" alt="support" width="40" height="40"> Technologies used
+## Technologies used
 
-<img src="https://cdn.svgporn.com/logos/bootstrap.svg" alt="bootstrap" width="30" height="30"/></br> Bootstrap |  <img src="https://cdn.svgporn.com/logos/nodejs-icon.svg" alt="js" width="30" height="30"/></br> NodeJS | <img src="https://cdn.svgporn.com/logos/mysql.svg" alt="vue" width="30" height="30"/></br> MySQL |
-| --------- | --------- |--------- |
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
-## <img src="https://image.flaticon.com/icons/png/512/2435/2435107.png" alt="support" width="40" height="40"> Browsers support
+## Browsers support
 
-[<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br> Opera |
-| --------- | --------- | --------- |--------- |
+![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)
+![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)
+![Safari](https://img.shields.io/badge/Safari-000000?style=for-the-badge&logo=Safari&logoColor=white)
+![Opera](https://img.shields.io/badge/Opera-FF1B2D?style=for-the-badge&logo=Opera&logoColor=white)
