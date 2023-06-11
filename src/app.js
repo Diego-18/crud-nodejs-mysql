@@ -1,39 +1,50 @@
 const express = require('express');
+const { Router } = express;
 const path = require('path');
 const morgan = require('morgan');
 const mysql = require('mysql');
 const myConnection = require('express-myconnection');
 const app = express();
 
-// IMPORTING ROUTES
+// Import routes
 const customerRoutes = require('./routes/customer'); //importing route
 
-//SETTINGS
+// Settings
 app.set('port', process.env.PORT || 3000); //setting port
 app.set('view engine', 'ejs'); //setting view engine
 app.set('views', path.join(__dirname, 'views')); //setting views folder
 
-
-//MIDDLEWARES
+// Middleware
 app.use(morgan('dev')); //logging
-app.use(myConnection(mysql, {
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    port: 3306,
-    database: 'crud-nodejs'
-}, 'single')); //connecting to database
-app.use(express.urlencoded({extended: false})); //parsing data
+app.use(express.urlencoded({ extended: false })); //parsing data
 
+//connecting to database
+const dbConfig = {
+	host: 'localhost',
+	user: 'root',
+	password: '',
+	port: 3306,
+	database: 'crud-nodejs',
+};
 
-//ROUTES
-app.use('/', customerRoutes); //using routes
+app.use(myConnection(mysql, dbConfig, 'single'));
 
-//STATIC FILES
-app.use(express.static(path.join(__dirname, 'public'))); //setting static files
+// Routes
+app.use('/', customerRoutes);
 
+// Statics Files
+app.use(express.static(path.join(__dirname, 'public')));
 
-// STARTING SERVER
+// Error management
+app.use((err, req, res, next) => {
+	console.error(err);
+	res.status(500).json({ error: 'Error interno del servidor' });
+});
+
+// Server Start
 app.listen(app.get('port'), () => {
-    console.log('Server is running on port 3000');
+	console.log(
+		'El servidor está en funcionamiento en el puerto',
+		app.get('port')
+	);
 });
